@@ -11,6 +11,15 @@
     padding: 0;
 }
 
+.divider {
+    border: 3px solid $main-color;
+    width: 60px;
+    margin-top: 25px;
+    &_mt4 {
+        margin-top: 4px;
+    }
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -21,3 +30,4 @@
 @import 'blocks/buttons';
 @import 'blocks/social_panel';
 @import 'blocks/menu';
+@import 'blocks/about';
