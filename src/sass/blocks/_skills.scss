@@ -1,0 +1,87 @@
+.skills {
+    padding-top: 120px;
+
+    &__title {
+        position: relative;
+        @include before_circle_center;
+    }
+
+    &__stack {
+        padding: 60px 10px 010px;
+        display: grid;
+        grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+
+        .stack__item {
+            padding: 30px 30px 25px 30px;
+            border: 1px solid #000;
+
+            &-title {
+                margin-top: 20px;
+            }
+
+            &-descr {
+                margin-top: 15px;
+                margin-bottom: 0;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            &-icon {
+                display: flex;
+                align-items: center;
+                min-height:  65px;
+            }
+        }
+    }
+
+    &__progress {
+        padding-top: 120px;
+
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        grid-auto-rows: minmax(70px, auto);
+        column-gap: 45px;
+        row-gap: 30px;
+
+        .progress__item {
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-title {
+                padding-left: 13px;
+                position: relative;
+                @include before_circle;
+                &:before {
+                    top: -8px;
+                }
+            }
+
+            &-value {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            &-chart {
+                margin-top: 27px;
+                border-radius: 4px;
+                width: 350px;
+                height: 14px;
+                background: #e8e4de;
+                span {
+                    width: 0;
+                    height: 100%;
+                    border-radius: 4px;
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+
+
+}
