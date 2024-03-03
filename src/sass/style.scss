@@ -6,6 +6,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    color: $font-color;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,9 +15,10 @@
 .divider {
     border: 3px solid $main-color;
     width: 60px;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
     &_mt4 {
         margin-top: 4px;
+        margin-left: 0;
     }
 }
 
@@ -31,3 +33,4 @@
 @import 'blocks/social_panel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
