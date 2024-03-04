@@ -32,9 +32,11 @@
         margin-top: 20px;
         font-weight: 500;
         font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0;
     }
 
-    &__skills {
+    &__stack {
         display: grid;
         grid-template-columns: 260px 260px;
         grid-template-rows:  minmax(115px, auto)  minmax(115px, auto);
@@ -65,6 +67,4 @@
             line-height: 18px;
         }
     }
-
-
 }

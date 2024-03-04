@@ -1,11 +1,6 @@
 .skills {
     padding-top: 120px;
 
-    &__title {
-        position: relative;
-        @include before_circle_center;
-    }
-
     &__stack {
         padding: 60px 10px 010px;
         display: grid;
@@ -82,6 +77,4 @@
             }
         }
     }
-
-
 }

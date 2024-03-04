@@ -3,8 +3,9 @@
     font-size: 36px;
     line-height: 60px;
 
-    &_center {
-        text-align: center;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
     }
 
     &_fz16 {
@@ -21,8 +22,13 @@
         font-size: 48px;
     }
 
-    &_fz14 {
-        font-size: 14px;
-        line-height: 21px;
+    &_center {
+        text-align: center;
+    }
+
+    &_section {
+        position: relative;
+        text-align: center;
+        @include before_circle_center;
     }
 }
