@@ -30,6 +30,27 @@
             }
         }
     }
+
+    .resume {
+        &__wrapper {
+            padding: 60px 30px 0 30px;
+            column-gap: 50px;
+        }
+    }
+
+    .skills {
+        &__stack {
+            grid-template-columns: repeat(3, 270px);
+        }
+
+        &__progress {
+            padding-top: 100px;
+            grid-template-columns: repeat(2, 350px);
+            justify-content: center;
+            column-gap: 60px;
+        }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -56,6 +77,25 @@
             }
         }
     }
+
+    .resume {
+        &__wrapper {
+            padding: 60px 25px 0 25px;
+            grid-template-columns: repeat(2, 310px);
+            column-gap: 50px;
+        }
+    }
+
+    .skills {
+        &__stack {
+            grid-template-columns: repeat(2, 270px);
+        }
+
+        &__progress {
+            grid-template-columns: repeat(2, 340px);
+            column-gap: 40px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -67,6 +107,14 @@
         &_fz48 {
             font-size: 28px;
         }
+
+        &_fz36 {
+            font-size: 24px;
+        }
+    }
+
+    .divider {
+        margin-top: 15px;
     }
 
     .promo {
@@ -96,6 +144,26 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
             }
+        }
+    }
+
+    .resume {
+        margin-top: 50px;
+        &__wrapper {
+            padding: 60px 0 0 0;
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 20px;
+        }
+    }
+
+    .skills {
+        &__stack {
+            grid-template-columns: repeat(2, 270px);
+        }
+
+        &__progress {
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 20px;
         }
     }
 }
@@ -137,6 +205,37 @@
                 grid-template-columns: 40px 200px;
                 column-gap: 20px;
             }
+        }
+    }
+
+    .resume {
+        margin-top: 40px;
+        &__wrapper {
+            padding: 40px 0 0 0;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+    }
+
+    .skills {
+        padding-top: 40px;
+
+        .title {
+            &_fz36 {
+                line-height: 48px;
+                width: 209px;
+                margin: 0 auto;
+            }
+        }
+
+        &__stack {
+            padding-top: 20px;
+            grid-template-columns: 270px;
+        }
+
+        &__progress {
+            padding-top: 40px;
+            grid-template-columns: 300px;
         }
     }
 }
