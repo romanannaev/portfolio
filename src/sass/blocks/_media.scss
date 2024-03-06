@@ -1,0 +1,142 @@
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .social_panel {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+
+        &__stack {
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+        column-gap: 20px;
+
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .about {
+        &__subtitle {
+            font-size: 30px;
+        }
+
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 40px;
+        }
+
+        &__stack {
+            grid-template: minmax(115px, auto) / 380px;
+
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .title {
+        &_fz48 {
+            font-size: 28px;
+        }
+    }
+
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+
+    .about {
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__wrapper {
+            grid-template: 450px auto auto / 1fr;
+        }
+
+        &__photo {
+            grid-row: unset;
+        }
+
+        &__stack {
+            grid-template-columns: repeat(2, 260px);
+
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+
+    .promo {
+        background: url('../img/main_bg_320px.jpg') center center / cover no-repeat;
+
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-rows: 340px auto auto;
+        }
+
+        &__stack {
+            grid-template-columns: 1fr;
+
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
+}
