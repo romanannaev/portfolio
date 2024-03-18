@@ -34,8 +34,24 @@
         margin-top: 20px;
         font-weight: 500;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 23px;
         margin-bottom: 0;
+        list-style-type: none;
+
+        li {
+            padding-left: 25px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 10px;
+                top: 8px;
+                width: 5px;
+                height: 5px;
+                background-color: $main-color;
+                border-radius: 100%;
+            }
+        }
     }
 
     &__stack {
